@@ -47,6 +47,8 @@ class NumPadItemAdapter : RecyclerView.Adapter<NumPadItemAdapter.NumPadItemViewH
             with(binding) {
                 val numPadValue = numPadValueList[adapterPosition]
 
+                tvNumPadValLetter.text = numPadValue.valueLetter
+
                 if (numPadValue.valueType == ValueType.NUMBER) {
                     tvNumPadVal.text = numPadValue.value.toString()
                 } else if (numPadValue.valueType == ValueType.ICON) {

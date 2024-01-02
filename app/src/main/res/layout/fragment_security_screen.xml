@@ -25,18 +25,19 @@
         android:text="@string/enter_your_passcode"
         android:textSize="16sp" />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNumField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/enter_your_passcode" />
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNumPad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:layout_gravity="center_horizontal"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="3" />
 
